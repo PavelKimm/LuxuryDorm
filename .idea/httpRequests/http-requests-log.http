@@ -1,0 +1,135 @@
+POST http://localhost:5005/bus/add/?modelName=pzr&number=10
+Content-Type: application/x-www-form-urlencoded
+
+<> 2020-02-04T034438.200.json
+
+###
+
+POST http://localhost:5005/bus/add/?modelName=pwzr&number=10
+Content-Type: application/x-www-form-urlencoded
+
+<> 2020-02-04T034340.200.json
+
+###
+
+POST http://localhost:5005/bus/add/?modelName=pzr&number=10
+Content-Type: application/x-www-form-urlencoded
+
+<> 2020-02-04T034143.200.json
+
+###
+
+POST http://localhost:5005/bus/add/?modelName=pzr&number=10
+Content-Type: application/x-www-form-urlencoded
+
+<> 2020-02-04T033739.200.json
+
+###
+
+POST http://localhost:5005/bus/add/
+Content-Type: application/x-www-form-urlencoded
+
+modelName=pzr&number=10
+
+<> 2020-02-04T033555.200.json
+
+###
+
+POST http://localhost:5005/bus/model/add
+Content-Type: application/x-www-form-urlencoded
+
+name=pzr&size=40&producer=russia
+
+<> 2020-02-04T033306.200.json
+
+###
+
+POST http://localhost:5005/bus/add/passenger/
+Content-Type: application/x-www-form-urlencoded
+
+number=12&passengerName=Vasya
+
+<> 2020-02-04T032603.500.json
+
+###
+
+POST http://localhost:5005/bus/add/passenger/
+Content-Type: application/x-www-form-urlencoded
+
+number=12&passengerName=Vasya
+
+###
+
+POST http://localhost:5005/bus/add/passenger/
+Content-Type: application/x-www-form-urlencoded
+
+id=1&number=12&passengerName=Vasya
+
+<> 2020-02-04T032351.500.json
+
+###
+
+POST http://localhost:5005/bus/add/passenger/
+Content-Type: application/x-www-form-urlencoded
+
+number=12&passengerName=Vasya
+
+<> 2020-02-04T032338.500.json
+
+###
+
+POST http://localhost:5005/bus/add/passenger/?number=12&passengerName=Vasya
+Content-Type: application/x-www-form-urlencoded
+
+<> 2020-02-04T032251.500.json
+
+###
+
+POST http://localhost:5005/bus/add/passenger/?number=12&passengerName=Vasya
+Content-Type: application/x-www-form-urlencoded
+
+<> 2020-02-04T032209.500.json
+
+###
+
+POST http://localhost:5005/bus/add/passenger?number=12&passengerName=Vasya
+Content-Type: application/x-www-form-urlencoded
+
+<> 2020-02-04T032109.500.json
+
+###
+
+POST http://localhost:5005/bus/add/
+Content-Type: application/x-www-form-urlencoded
+
+modelName=testModel&number=10
+
+<> 2020-02-04T031806.200.json
+
+###
+
+POST http://localhost:5005/bus/add/
+Content-Type: application/x-www-form-urlencoded
+
+number=10&modelName=testModel
+
+<> 2020-02-04T031613.200.json
+
+###
+
+POST http://localhost:5005/bus/add/
+Content-Type: application/x-www-form-urlencoded
+
+number=10
+
+<> 2020-02-04T031538.400.json
+
+###
+
+POST http://localhost:8080/bus/add/
+Content-Type: application/x-www-form-urlencoded
+
+number=10
+
+###
+
