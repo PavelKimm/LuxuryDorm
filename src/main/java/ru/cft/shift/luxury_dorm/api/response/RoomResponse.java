@@ -9,7 +9,7 @@ public class RoomResponse {
     private Integer area;
     private Integer max_product;
     private Integer product_count;
-    private List<ProductResponse> products;
+    private List<ProductCountResponse> products;
 
     public Long getId() {
         return id;
@@ -59,11 +59,11 @@ public class RoomResponse {
         this.product_count = product_count;
     }
 
-    public List<ProductResponse> getProducts() {
+    public List<ProductCountResponse> getProducts() {
         return products;
     }
 
-    public void setProducts(List<ProductResponse> products) {
+    public void setProducts(List<ProductCountResponse> products) {
         this.products = products;
     }
 

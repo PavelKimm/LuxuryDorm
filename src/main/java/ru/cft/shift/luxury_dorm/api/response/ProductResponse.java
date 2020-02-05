@@ -6,7 +6,6 @@ public class ProductResponse {
     private Float price;
     private String category;
     private Long category_id;
-    private Integer count;
     private String description;
 
     public Long getId() {
@@ -49,14 +48,6 @@ public class ProductResponse {
         this.category_id = category_id;
     }
 
-    public Integer getCount() {
-        return count;
-    }
-
-    public void setCount(Integer count) {
-        this.count = count;
-    }
-
     public String getDescription() {
         return description;
     }
@@ -73,7 +64,6 @@ public class ProductResponse {
                 ", price=" + price +
                 ", category='" + category + '\'' +
                 ", category_id=" + category_id +
-                ", count=" + count +
                 ", description='" + description + '\'' +
                 '}';
     }
