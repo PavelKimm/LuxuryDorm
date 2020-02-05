@@ -16,5 +16,15 @@ public class RoomTypeEntity {
     @Column(name = "Area")
     private Integer area;
     @Column(name = "MaxProducts")
-    private int maxProductQuantity;
+    private Integer maxProductQuantity;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setArea(Integer area) {
+        this.area = area;
+    }
+    public void setMaxProductQuantity(Integer maxProductQuantity) {
+        this.maxProductQuantity = maxProductQuantity;
+    }
 }

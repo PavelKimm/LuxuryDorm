@@ -12,7 +12,14 @@ public class RoomEntity {
     @GeneratedValue(strategy = IDENTITY)
     private Long id;
     @Column(name = "Name")
-    private String name;
+    public String name;
     @ManyToOne(cascade = CascadeType.ALL)
-    private RoomTypeEntity roomType;
+    public RoomTypeEntity roomType;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setRoomType(RoomTypeEntity roomType) {
+        this.roomType = roomType;
+    }
 }

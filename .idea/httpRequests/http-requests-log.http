@@ -1,3 +1,185 @@
+GET http://localhost:5005/room/type/?name=loh
+
+<> 2020-02-05T083943.200.json
+
+###
+
+GET http://localhost:5005/room/type/?name=
+
+###
+
+GET http://localhost:5005/room/type/?name=lu
+
+###
+
+GET http://localhost:5005/room/type/?name=lux
+
+<> 2020-02-05T083916.200.json
+
+###
+
+GET http://localhost:5005/room/type
+
+typeName=lux
+
+<> 2020-02-05T083902.400.json
+
+###
+
+GET http://localhost:5005/room/type/
+
+typeName=lux
+
+<> 2020-02-05T083841.400.json
+
+###
+
+GET http://localhost:5005/room/type/
+
+name=lux
+
+<> 2020-02-05T083733.400.json
+
+###
+
+GET http://localhost:5005/room/1/
+
+<> 2020-02-04T111437.200.json
+
+###
+
+GET http://localhost:5005/room-type/1/
+
+<> 2020-02-04T111426.200.json
+
+###
+
+GET http://localhost:5005/room/1/
+
+<> 2020-02-04T111344.200.json
+
+###
+
+POST http://localhost:5005/room/add/
+Content-Type: application/x-www-form-urlencoded
+
+name=123&type=standard
+
+<> 2020-02-04T111142.200.json
+
+###
+
+POST http://localhost:5005/room/add/
+Content-Type: application/x-www-form-urlencoded
+
+name=123&type=loh
+
+<> 2020-02-04T111133.200.json
+
+###
+
+POST http://localhost:5005/room/add/
+Content-Type: application/x-www-form-urlencoded
+
+name=123&type=lux
+
+<> 2020-02-04T111117.200.json
+
+###
+
+POST http://localhost:5005/room/add/
+Content-Type: application/x-www-form-urlencoded
+
+name=123&type=lux
+
+<> 2020-02-04T110848.200.json
+
+###
+
+POST http://localhost:5005/room/add/
+Content-Type: application/x-www-form-urlencoded
+
+name=123&type=test
+
+<> 2020-02-04T110827.200.json
+
+###
+
+POST http://localhost:5005/room-type/add/
+Content-Type: application/x-www-form-urlencoded
+
+name=test&area=12&maxProductQuantity=5
+
+<> 2020-02-04T110623.200.json
+
+###
+
+POST http://localhost:5005/room-type/add
+Content-Type: application/x-www-form-urlencoded
+
+name=test&area=12&maxProductQuantity=5
+
+<> 2020-02-04T110605.200.json
+
+###
+
+POST http://localhost:5005/room-type/add/
+Content-Type: application/x-www-form-urlencoded
+
+name=test&area=12&maxProductQuantity=5
+
+<> 2020-02-04T110510.200.json
+
+###
+
+POST http://localhost:5005/room-type/add
+Content-Type: application/x-www-form-urlencoded
+
+name=test&area=12&maxProductQuantity=5
+
+<> 2020-02-04T110456.405.json
+
+###
+
+POST http://localhost:5005/room/add/room-type
+Content-Type: application/x-www-form-urlencoded
+
+name=test&area=12&maxProductQuantity=5
+
+<> 2020-02-04T110334.200.json
+
+###
+
+GET http://localhost:5005/room/1/
+
+<> 2020-02-04T085512.500.json
+
+###
+
+GET http://localhost:5005/room/1/
+
+<> 2020-02-04T084854.500.json
+
+###
+
+GET http://localhost:5005/room/1
+
+<> 2020-02-04T084849.500.json
+
+###
+
+GET http://localhost:5005/room/2
+
+<> 2020-02-04T084844.500.json
+
+###
+
+GET http://localhost:5005/room/
+
+<> 2020-02-04T084835.404.json
+
+###
+
 POST http://localhost:5005/bus/add/?modelName=pzr&number=10
 Content-Type: application/x-www-form-urlencoded
 
