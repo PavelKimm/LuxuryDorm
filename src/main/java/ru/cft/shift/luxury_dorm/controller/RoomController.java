@@ -2,6 +2,7 @@ package ru.cft.shift.luxury_dorm.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import ru.cft.shift.luxury_dorm.api.response.RoomResponse;
 import ru.cft.shift.luxury_dorm.entity.RoomEntity;
 import ru.cft.shift.luxury_dorm.service.IRoomService;
 
@@ -22,7 +23,7 @@ public class RoomController {
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "/room/{id}", produces = "application/json")
-    public RoomEntity get(@PathVariable(name = "id") Long id) {
+    public RoomResponse get(@PathVariable(name = "id") Long id) {
         return roomService.get(id);
     }
 }

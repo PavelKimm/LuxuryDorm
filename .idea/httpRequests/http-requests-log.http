@@ -1,3 +1,34 @@
+GET http://localhost:5005/room/1/
+
+<> 2020-02-05T042107.200.json
+
+###
+
+GET http://localhost:5005/room/type/?name=loh
+
+<> 2020-02-05T042100.200.json
+
+###
+
+GET http://localhost:5005/room/1/
+
+<> 2020-02-05T041947.200.json
+
+###
+
+GET http://localhost:5005/room/1/
+
+<> 2020-02-05T041627.200.json
+
+###
+
+POST http://localhost:5005/bus/model/add
+Content-Type: application/x-www-form-urlencoded
+
+name=pzr&size=40&producer=russia
+
+###
+
 GET http://localhost:5005/room/1
 Accept: application/json
 
@@ -327,22 +358,6 @@ Content-Type: application/x-www-form-urlencoded
 number=10&modelName=testModel
 
 <> 2020-02-04T031613.200.json
-
-###
-
-POST http://localhost:5005/bus/add/
-Content-Type: application/x-www-form-urlencoded
-
-number=10
-
-<> 2020-02-04T031538.400.json
-
-###
-
-POST http://localhost:8080/bus/add/
-Content-Type: application/x-www-form-urlencoded
-
-number=10
 
 ###
 
