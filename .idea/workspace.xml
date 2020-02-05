@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7147384-249e-49d9-9de6-9336481b76cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/quickstart_bus_traffic/controller/BusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/quickstart_bus_traffic/controller/BusController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/shift.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/files/shift.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/entity/CategoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/entity/ProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/entity/ProductEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/entity/RoomEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/entity/RoomEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/entity/RoomTypeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/entity/RoomTypeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/entity/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +59,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,6 +79,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTTP Request" />
@@ -86,6 +93,21 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5005/room/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:5005/room/type/" />
@@ -548,7 +570,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.scratch_1#4">
+  <component name="RunManager" selected="HTTP Request.scratch#1">
     <configuration name="scratch#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -613,18 +635,18 @@
     </configuration>
     <configuration name="QuickstartBusTrafficApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="quickstart_bus_traffic.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.cft.shift.quickstart_bus_traffic.QuickstartBusTrafficApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.cft.shift.luxury_dorm.QuickstartLuxuryDormApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.scratch#1" />
         <item itemvalue="HTTP Request.scratch_1#4" />
         <item itemvalue="HTTP Request.scratch_1#3" />
         <item itemvalue="HTTP Request.scratch_1#1" />
         <item itemvalue="HTTP Request.scratch#3" />
-        <item itemvalue="HTTP Request.scratch#1" />
       </list>
     </recent_temporary>
   </component>
@@ -642,6 +664,8 @@
       <workItem from="1580802897318" duration="3898000" />
       <workItem from="1580807870329" duration="5892000" />
       <workItem from="1580819860365" duration="9406000" />
+      <workItem from="1580886095465" duration="1455000" />
+      <workItem from="1580888351373" duration="756000" />
     </task>
     <servers />
   </component>
@@ -666,37 +690,53 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="344" y="83" key="#QuickstartBusTrafficApplication/0.23.1440.877@0.23.1440.877" timestamp="1580807922294" />
-    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1580866783051">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1580889037795">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1580889037795" />
+    <state x="514" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580887205001">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="514" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1580887205001" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1580889118942">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580889118942" />
     <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580866783051" />
-    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1580866783050">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1580889118942">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580889118942" />
     <state width="1398" height="284" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1580866783050" />
-    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1580866783050">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1580889118942">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580889118942" />
     <state width="1398" height="284" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1580866783050" />
-    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1580866783050">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1580889118942">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580889118942" />
     <state width="1398" height="284" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1580866783050" />
-    <state width="1398" height="284" key="GridCell.Tab.1.bottom" timestamp="1580866653460">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1580889118911">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580889118911" />
     <state width="1398" height="284" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580866653460" />
-    <state width="1398" height="284" key="GridCell.Tab.1.center" timestamp="1580866653460">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1580889118911">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1580889118911" />
     <state width="1398" height="284" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1580866653460" />
-    <state width="1398" height="284" key="GridCell.Tab.1.left" timestamp="1580866653459">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1580889118911">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1580889118911" />
     <state width="1398" height="284" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1580866653459" />
-    <state width="1398" height="284" key="GridCell.Tab.1.right" timestamp="1580866653460">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1580889118911">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1580889118911" />
     <state width="1398" height="284" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1580866653460" />
     <state x="26" y="83" key="SettingsEditor" timestamp="1580810158775">
       <screen x="0" y="23" width="1440" height="877" />
@@ -714,5 +754,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="385" y="211" key="run.anything.popup/0.23.1440.877@0.23.1440.877" timestamp="1580801972405" />
+    <state x="431" y="145" key="search.everywhere.popup" timestamp="1580888567895">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1580888567895" />
   </component>
 </project>
