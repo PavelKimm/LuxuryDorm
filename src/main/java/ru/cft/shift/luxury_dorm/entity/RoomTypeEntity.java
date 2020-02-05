@@ -18,12 +18,34 @@ public class RoomTypeEntity {
     @Column(name = "MaxProducts")
     private Integer maxProductQuantity;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
+
+    public Integer getArea() {
+        return area;
+    }
+
     public void setArea(Integer area) {
         this.area = area;
     }
+
+    public Integer getMaxProductQuantity() {
+        return maxProductQuantity;
+    }
+
     public void setMaxProductQuantity(Integer maxProductQuantity) {
         this.maxProductQuantity = maxProductQuantity;
     }
