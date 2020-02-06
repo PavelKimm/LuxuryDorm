@@ -14,7 +14,7 @@ public class UserEntity {
     @Column(name = "Name")
     private String name;
     @Column(name = "Balance")
-    private float balance;
+    private Float balance;
     @OneToOne(cascade = CascadeType.ALL)
     private RoomEntity room;
 
@@ -38,7 +38,7 @@ public class UserEntity {
         return balance;
     }
 
-    public void setBalance(Integer balance) {
+    public void setBalance(Float balance) {
         this.balance = balance;
     }
 
