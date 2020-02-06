@@ -1,3 +1,153 @@
+GET http://localhost:5005/catalog/л
+
+<> 2020-02-06T060216.200.json
+
+###
+
+GET http://localhost:5005/catalog/Л
+
+<> 2020-02-06T060210.200.json
+
+###
+
+GET http://localhost:5005/catalog/кр
+
+<> 2020-02-06T060153.200.json
+
+###
+
+GET http://localhost:5005/catalog/Кр
+
+<> 2020-02-06T060142.200.json
+
+###
+
+GET http://localhost:5005/catalog/кресло
+
+<> 2020-02-06T060004.200.json
+
+###
+
+GET http://localhost:5005/catalog/Кресло
+
+<> 2020-02-06T055943.200.json
+
+###
+
+GET http://localhost:5005/catalog/К
+
+<> 2020-02-06T055921.200.json
+
+###
+
+GET http://localhost:5005/catalog/К
+
+<> 2020-02-06T055008.200.json
+
+###
+
+GET http://localhost:5005/catalog/к
+
+<> 2020-02-06T055001.200.json
+
+###
+
+GET http://localhost:5005/catalog/Ст
+
+<> 2020-02-06T054949.200.json
+
+###
+
+GET http://localhost:5005/catalog/Ст
+
+<> 2020-02-06T054818.200.json
+
+###
+
+GET http://localhost:5005/catalog/Стул
+
+<> 2020-02-06T054812.200.json
+
+###
+
+GET http://localhost:5005/catalog/
+
+<> 2020-02-06T054757.200.json
+
+###
+
+GET http://localhost:5005/catalog/мяг
+
+<> 2020-02-06T054751.200.json
+
+###
+
+GET http://localhost:5005/catalog/мягкое
+
+<> 2020-02-06T054744.200.json
+
+###
+
+GET http://localhost:5005/catalog/Мягкое
+
+<> 2020-02-06T054735.200.json
+
+###
+
+GET http://localhost:5005/catalog/ggjhg
+
+<> 2020-02-06T054719.200.json
+
+###
+
+GET http://localhost:5005/catalog/ggjhg
+
+<> 2020-02-06T054620.400.json
+
+###
+
+GET http://localhost:5005/catalog?request=hsjhs
+
+<> 2020-02-06T054550.200.json
+
+###
+
+GET http://localhost:5005/catalog?request=ashkasd
+
+<> 2020-02-06T054536.200.json
+
+###
+
+GET http://localhost:5005/catalog/?request=ashkasd
+
+<> 2020-02-06T054515.200.json
+
+###
+
+GET http://localhost:5005/catalog?request=ashkasd
+
+<> 2020-02-06T054459.200.json
+
+###
+
+GET http://localhost:5005/catalog/ggg
+
+<> 2020-02-06T054330.400.json
+
+###
+
+GET http://localhost:5005/catalog/ррр
+
+<> 2020-02-06T054319.400.json
+
+###
+
+GET http://localhost:5005/catalog/Мягкое
+
+<> 2020-02-06T054242.400.json
+
+###
+
 GET http://localhost:5005/users/1
 
 <> 2020-02-06T030031.200.json
@@ -137,172 +287,6 @@ GET http://localhost:5005/users/add?id=1
 GET http://localhost:5005/users/1
 
 <> 2020-02-05T102319.500.json
-
-###
-
-GET http://localhost:5005/users/name
-
-<> 2020-02-05T102215.400.json
-
-###
-
-GET http://localhost:5005/room/1/
-
-<> 2020-02-05T042107.200.json
-
-###
-
-GET http://localhost:5005/room/type/?name=loh
-
-<> 2020-02-05T042100.200.json
-
-###
-
-GET http://localhost:5005/room/1/
-
-<> 2020-02-05T041947.200.json
-
-###
-
-GET http://localhost:5005/room/1/
-
-<> 2020-02-05T041627.200.json
-
-###
-
-POST http://localhost:5005/bus/model/add
-Content-Type: application/x-www-form-urlencoded
-
-name=pzr&size=40&producer=russia
-
-###
-
-GET http://localhost:5005/room/1
-Accept: application/json
-
-<> 2020-02-05T025113.200.json
-
-###
-
-GET http://localhost:5005/room/1
-Accept: application/json
-
-###
-
-GET http://localhost:5005/room/1
-Accept: application/json
-
-###
-
-GET http://localhost:5005/room/1
-Accept: application/json
-
-<> 2020-02-05T020503.200.json
-
-###
-
-GET http://localhost:5005/room/1
-Accept: application/json
-
-<> 2020-02-05T123136.200.json
-
-###
-
-GET http://localhost:5005/room/type/?name=loh
-
-<> 2020-02-05T083943.200.json
-
-###
-
-GET http://localhost:5005/room/type/?name=
-
-###
-
-GET http://localhost:5005/room/type/?name=lu
-
-###
-
-GET http://localhost:5005/room/type/?name=lux
-
-<> 2020-02-05T083916.200.json
-
-###
-
-GET http://localhost:5005/room/type
-
-typeName=lux
-
-<> 2020-02-05T083902.400.json
-
-###
-
-GET http://localhost:5005/room/type/
-
-typeName=lux
-
-<> 2020-02-05T083841.400.json
-
-###
-
-GET http://localhost:5005/room/type/
-
-name=lux
-
-<> 2020-02-05T083733.400.json
-
-###
-
-GET http://localhost:5005/room/1/
-
-<> 2020-02-04T111437.200.json
-
-###
-
-GET http://localhost:5005/room-type/1/
-
-<> 2020-02-04T111426.200.json
-
-###
-
-GET http://localhost:5005/room/1/
-
-<> 2020-02-04T111344.200.json
-
-###
-
-POST http://localhost:5005/room/add/
-Content-Type: application/x-www-form-urlencoded
-
-name=123&type=standard
-
-<> 2020-02-04T111142.200.json
-
-###
-
-POST http://localhost:5005/room/add/
-Content-Type: application/x-www-form-urlencoded
-
-name=123&type=loh
-
-<> 2020-02-04T111133.200.json
-
-###
-
-POST http://localhost:5005/room/add/
-Content-Type: application/x-www-form-urlencoded
-
-name=123&type=lux
-
-<> 2020-02-04T111117.200.json
-
-###
-
-POST http://localhost:5005/room/add/
-Content-Type: application/x-www-form-urlencoded
-
-name=123&type=lux
-
-<> 2020-02-04T110848.200.json
 
 ###
 
