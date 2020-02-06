@@ -34,7 +34,7 @@ public class UserEntity {
         this.name = name;
     }
 
-    public float getBalance() {
+    public Float getBalance() {
         return balance;
     }
 

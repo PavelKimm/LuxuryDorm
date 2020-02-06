@@ -1,184 +1,150 @@
-GET http://localhost:5005/users/1/wallet/charge
-Content-Type: application/json
+GET http://localhost:5005/catalog/л
 
-{
-  "user_id": "1",
-  "value": "140"
-}
-
-<> 2020-02-06T055709.200.json
+<> 2020-02-06T060216.200.json
 
 ###
 
-POST http://localhost:5005/users/1/wallet/charge
-Content-Type: application/json
+GET http://localhost:5005/catalog/Л
 
-{
-  "user_id": "1",
-  "value": "140"
-}
-
-<> 2020-02-06T051919.200.json
+<> 2020-02-06T060210.200.json
 
 ###
 
-POST http://localhost:5005/users/1/wallet/charge
-Content-Type: application/json
+GET http://localhost:5005/catalog/кр
 
-{
-  "user_id": "1",
-  "value": "140"
-}
-
-<> 2020-02-06T050535.200.json
+<> 2020-02-06T060153.200.json
 
 ###
 
-POST http://localhost:5005/users/1/wallet/charge
-Content-Type: application/json
+GET http://localhost:5005/catalog/Кр
 
-{
-  "user_id": "1",
-  "value": "140"
-}
-
-<> 2020-02-06T050533.200.json
+<> 2020-02-06T060142.200.json
 
 ###
 
-POST http://localhost:5005/users/1/wallet/charge
-Content-Type: application/json
+GET http://localhost:5005/catalog/кресло
 
-{
-  "user_id": "1",
-  "value": "140"
-}
-
-<> 2020-02-06T050324.200.json
+<> 2020-02-06T060004.200.json
 
 ###
 
-POST http://localhost:5005/users/1/wallet/charge
-Content-Type: application/json
+GET http://localhost:5005/catalog/Кресло
 
-{
-  "user_id": "1",
-  "value": "140"
-}
-
-<> 2020-02-06T050321.200.json
+<> 2020-02-06T055943.200.json
 
 ###
 
-POST http://localhost:5005/users/1/wallet/charge
-Content-Type: application/json
+GET http://localhost:5005/catalog/К
 
-{
-  "user_id": "1",
-  "value": "140"
-}
-
-<> 2020-02-06T045255.200.json
+<> 2020-02-06T055921.200.json
 
 ###
 
-POST http://localhost:5005/users/1/wallet/charge
-Content-Type: application/json
+GET http://localhost:5005/catalog/К
 
-{
-  "user_id": "1",
-  "value": "140"
-}
-
-<> 2020-02-06T044202.200.json
+<> 2020-02-06T055008.200.json
 
 ###
 
-POST http://localhost:5005/users/1/wallet/charge
-Content-Type: application/json
+GET http://localhost:5005/catalog/к
 
-{
-  "user_id": "1",
-  "value": "140"
-}
-
-<> 2020-02-06T043817.500.json
+<> 2020-02-06T055001.200.json
 
 ###
 
-POST http://localhost:5005/users/1/wallet/charge
-Content-Type: application/json
-{:
-  "user_id": "1",
-  "value": "140"
-}:
+GET http://localhost:5005/catalog/Ст
 
-<> 2020-02-06T043746.400.html
+<> 2020-02-06T054949.200.json
 
 ###
 
-POST http://localhost:5005/users/1/wallet/charge
-Content-Type: application/json
+GET http://localhost:5005/catalog/Ст
 
-{
-  "user_id": "1",
-  "value": "140"
-}
-
-<> 2020-02-06T043705.500.json
+<> 2020-02-06T054818.200.json
 
 ###
 
-POST http://localhost:5005/users/1/wallet/charge
-Content-Type: application/json
+GET http://localhost:5005/catalog/Стул
 
-{
-  "user_id": "1",
-  "value": "140"
-}
-
-<> 2020-02-06T042834.400.json
+<> 2020-02-06T054812.200.json
 
 ###
 
-GET http://localhost:5005/users/1
-Content-Type: application/x-www-form-urlencoded
+GET http://localhost:5005/catalog/
 
-<> 2020-02-06T042021.200.json
-
-###
-
-GET http://localhost:5005/users/1
-Content-Type: application/x-www-form-urlencoded
-
-<> 2020-02-06T041902.200.json
+<> 2020-02-06T054757.200.json
 
 ###
 
-GET http://localhost:5005/users/2
-Content-Type: application/x-www-form-urlencoded
+GET http://localhost:5005/catalog/мяг
 
-<> 2020-02-06T041847.500.json
-
-###
-
-POST http://localhost:5005/products/1
-Content-Type: application/json
-
-<> 2020-02-06T041053.405.json
+<> 2020-02-06T054751.200.json
 
 ###
 
-POST http://localhost:5005/products/1
-Content-Type: application/x-www-form-urlencoded
+GET http://localhost:5005/catalog/мягкое
 
-<> 2020-02-06T041048.405.json
+<> 2020-02-06T054744.200.json
 
 ###
 
-GET http://localhost:5005/room/type/?name=loh
+GET http://localhost:5005/catalog/Мягкое
 
-<> 2020-02-06T040921.200.json
+<> 2020-02-06T054735.200.json
+
+###
+
+GET http://localhost:5005/catalog/ggjhg
+
+<> 2020-02-06T054719.200.json
+
+###
+
+GET http://localhost:5005/catalog/ggjhg
+
+<> 2020-02-06T054620.400.json
+
+###
+
+GET http://localhost:5005/catalog?request=hsjhs
+
+<> 2020-02-06T054550.200.json
+
+###
+
+GET http://localhost:5005/catalog?request=ashkasd
+
+<> 2020-02-06T054536.200.json
+
+###
+
+GET http://localhost:5005/catalog/?request=ashkasd
+
+<> 2020-02-06T054515.200.json
+
+###
+
+GET http://localhost:5005/catalog?request=ashkasd
+
+<> 2020-02-06T054459.200.json
+
+###
+
+GET http://localhost:5005/catalog/ggg
+
+<> 2020-02-06T054330.400.json
+
+###
+
+GET http://localhost:5005/catalog/ррр
+
+<> 2020-02-06T054319.400.json
+
+###
+
+GET http://localhost:5005/catalog/Мягкое
+
+<> 2020-02-06T054242.400.json
 
 ###
 
@@ -321,50 +287,6 @@ GET http://localhost:5005/users/add?id=1
 GET http://localhost:5005/users/1
 
 <> 2020-02-05T102319.500.json
-
-###
-
-GET http://localhost:5005/users/name
-
-<> 2020-02-05T102215.400.json
-
-###
-
-GET http://localhost:5005/room/1/
-
-<> 2020-02-05T042107.200.json
-
-###
-
-GET http://localhost:5005/room/type/?name=loh
-
-<> 2020-02-05T042100.200.json
-
-###
-
-GET http://localhost:5005/room/1/
-
-<> 2020-02-05T041947.200.json
-
-###
-
-GET http://localhost:5005/room/1/
-
-<> 2020-02-05T041627.200.json
-
-###
-
-POST http://localhost:5005/bus/model/add
-Content-Type: application/x-www-form-urlencoded
-
-name=pzr&size=40&producer=russia
-
-###
-
-GET http://localhost:5005/room/1
-Accept: application/json
-
-<> 2020-02-05T025113.200.json
 
 ###
 

@@ -9,6 +9,7 @@ import ru.cft.shift.luxury_dorm.repository.IProductRepository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ProductService implements IProductService {
@@ -36,6 +37,28 @@ public class ProductService implements IProductService {
         List<ProductResponse> productResponseList = new ArrayList<>();
 
         List<ProductEntity> productEntityList = productRepository.getAllBy();
+        for (ProductEntity productEntity : productEntityList) {
+            ProductResponse productResponse = new ProductResponse();
+            productResponse.setId(productEntity.getId());
+            productResponse.setName(productEntity.getName());
+            productResponse.setPrice(productEntity.getPrice());
+            productResponse.setCategory(productEntity.getCategory().getName());
+            productResponse.setCategory_id(productEntity.getCategory().getId());
+            productResponse.setDescription(productEntity.getDescription());
+            productResponse.setPhoto_url(productEntity.getPhoto_url());
+            productResponseList.add(productResponse);
+        }
+        catalogResponse.setProducts(productResponseList);
+
+        return catalogResponse;
+
+    }
+    @Override
+    public CatalogResponse get(String request) {
+        CatalogResponse catalogResponse = new CatalogResponse();
+        List<ProductResponse> productResponseList = new ArrayList<>();
+
+        List<ProductEntity> productEntityList = productRepository.getAllBy().stream().filter(n -> n.getName().toLowerCase().contains(request.toLowerCase())).collect(Collectors.toList());
         for (ProductEntity productEntity : productEntityList) {
             ProductResponse productResponse = new ProductResponse();
             productResponse.setId(productEntity.getId());

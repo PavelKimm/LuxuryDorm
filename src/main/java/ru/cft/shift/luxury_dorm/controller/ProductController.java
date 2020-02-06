@@ -20,4 +20,9 @@ public class ProductController {
     public CatalogResponse get() {
         return productService.get();
     }
+
+    @RequestMapping(method = RequestMethod.GET, path = "/catalog/{request}", produces = "application/json")
+    public CatalogResponse get(@PathVariable(name = "request") String request) {
+        return productService.get(request);
+    }
 }

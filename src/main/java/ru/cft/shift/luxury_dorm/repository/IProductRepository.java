@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface IProductRepository extends CrudRepository<ProductEntity, Long> {
     List<ProductEntity> getAllBy();
+    List<ProductEntity> getAllByNameContaining(String request);
 }
