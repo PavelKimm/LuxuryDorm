@@ -20,7 +20,7 @@ public class RoomTypeEntity {
     @Column(name = "Price")
     private Float price;
     @Column(name = "Bonus")
-    private Integer bonus;
+    private Float bonus;
 
     public Long getId() {
         return id;
@@ -62,11 +62,11 @@ public class RoomTypeEntity {
         this.price = price;
     }
 
-    public Integer getBonus() {
+    public Float getBonus() {
         return bonus;
     }
 
-    public void setBonus(Integer bonus) {
+    public void setBonus(Float bonus) {
         this.bonus = bonus;
     }
 }

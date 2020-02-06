@@ -5,7 +5,7 @@ public class RoomTypeListResponse {
     private String name;
     private Integer area;
     private Integer max_products;
-    private Integer bonus;
+    private Float bonus;
     private Float price;
 
     public Long getId() {
@@ -40,11 +40,11 @@ public class RoomTypeListResponse {
         this.max_products = max_products;
     }
 
-    public Integer getBonus() {
+    public Float getBonus() {
         return bonus;
     }
 
-    public void setBonus(Integer bonus) {
+    public void setBonus(Float bonus) {
         this.bonus = bonus;
     }
 
