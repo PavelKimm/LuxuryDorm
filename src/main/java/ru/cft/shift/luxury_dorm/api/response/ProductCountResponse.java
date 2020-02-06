@@ -8,6 +8,7 @@ public class ProductCountResponse {
     private Long category_id;
     private Integer count;
     private String description;
+    private  String photo_url;
 
     public Long getId() {
         return id;
@@ -65,9 +66,17 @@ public class ProductCountResponse {
         this.description = description;
     }
 
+    public String getPhoto_url() {
+        return photo_url;
+    }
+
+    public void setPhoto_url(String photo_url) {
+        this.photo_url = photo_url;
+    }
+
     @Override
     public String toString() {
-        return "ProductResponse{" +
+        return "ProductCountResponse{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", price=" + price +
@@ -75,6 +84,7 @@ public class ProductCountResponse {
                 ", category_id=" + category_id +
                 ", count=" + count +
                 ", description='" + description + '\'' +
+                ", photo_url='" + photo_url + '\'' +
                 '}';
     }
 }

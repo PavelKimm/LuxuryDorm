@@ -7,6 +7,7 @@ public class ProductResponse {
     private String category;
     private Long category_id;
     private String description;
+    private String photo_url;
 
     public Long getId() {
         return id;
@@ -56,6 +57,14 @@ public class ProductResponse {
         this.description = description;
     }
 
+    public String getPhoto_url() {
+        return photo_url;
+    }
+
+    public void setPhoto_url(String photo_url) {
+        this.photo_url = photo_url;
+    }
+
     @Override
     public String toString() {
         return "ProductResponse{" +
@@ -65,6 +74,7 @@ public class ProductResponse {
                 ", category='" + category + '\'' +
                 ", category_id=" + category_id +
                 ", description='" + description + '\'' +
+                ", photo_url='" + photo_url + '\'' +
                 '}';
     }
 }

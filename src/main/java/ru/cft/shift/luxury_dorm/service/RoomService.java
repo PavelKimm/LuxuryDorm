@@ -40,7 +40,7 @@ public class RoomService implements IRoomService {
     @Override
     public RoomResponse get(Long id) {
         RoomResponse roomResponse = new RoomResponse();
-        List<ProductCountResponse> productCountRespons = new ArrayList<ProductCountResponse>();
+        List<ProductCountResponse> productCountResponseList = new ArrayList<>();
 
         RoomEntity roomEntity = roomRepository.findById(id).orElse(null);
         roomResponse.setId(roomEntity.getId());
@@ -51,8 +51,9 @@ public class RoomService implements IRoomService {
 
         List<RoomProductEntity> roomProductEntityList = roomProductRepository.getAllByRoomId(id);
         roomResponse.setProduct_count(roomProductEntityList.size());
+
+        ProductCountResponse productCountResponse = new ProductCountResponse();
         for (RoomProductEntity roomProductEntity : roomProductEntityList){
-            ProductCountResponse productCountResponse = new ProductCountResponse();
             productCountResponse.setId(roomProductEntity.getProduct().getId());
             productCountResponse.setCount(roomProductEntity.getQuantity());
             productCountResponse.setCategory(roomProductEntity.getProduct().getCategory().getName());
@@ -60,9 +61,10 @@ public class RoomService implements IRoomService {
             productCountResponse.setName(roomProductEntity.getProduct().getName());
             productCountResponse.setPrice(roomProductEntity.getProduct().getPrice());
             productCountResponse.setDescription(roomProductEntity.getProduct().getDescription());
-            productCountRespons.add(productCountResponse);
+            productCountResponse.setPhoto_url(roomProductEntity.getProduct().getPhoto_url());
+            productCountResponseList.add(productCountResponse);
         }
-        roomResponse.setProducts(productCountRespons);
+        roomResponse.setProducts(productCountResponseList);
 
         return roomResponse;
     }

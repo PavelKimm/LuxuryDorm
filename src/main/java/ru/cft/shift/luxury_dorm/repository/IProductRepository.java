@@ -6,4 +6,5 @@ import ru.cft.shift.luxury_dorm.entity.ProductEntity;
 import java.util.List;
 
 public interface IProductRepository extends CrudRepository<ProductEntity, Long> {
+    List<ProductEntity> getAllBy();
 }

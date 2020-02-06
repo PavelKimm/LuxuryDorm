@@ -15,8 +15,8 @@ public class ProductEntity {
     private String name;
     @Column(name = "Description")
     private String description;
-    @Column(name = "Photo")
-    private String photo;
+    @Column(name = "PhotoURL")
+    private String photo_url;
     @Column(name = "Price")
     private Float price;
     @ManyToOne(cascade = CascadeType.ALL)
@@ -46,12 +46,12 @@ public class ProductEntity {
         this.description = description;
     }
 
-    public String getPhoto() {
-        return photo;
+    public String getPhoto_url() {
+        return photo_url;
     }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public void setPhoto_url(String photo_url) {
+        this.photo_url = photo_url;
     }
 
     public Float getPrice() {

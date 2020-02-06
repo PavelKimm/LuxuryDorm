@@ -13,7 +13,7 @@ public class RoomController {
 
     @RequestMapping(
             method = RequestMethod.POST,
-            path = "/room/add",
+            path = "/rooms/add",
             consumes = "application/x-www-form-urlencoded",
             produces = "application/json"
     ) public RoomEntity add(
@@ -22,7 +22,7 @@ public class RoomController {
         return roomService.add(name, type);
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "/room/{id}", produces = "application/json")
+    @RequestMapping(method = RequestMethod.GET, path = "/rooms/{id}", produces = "application/json")
     public RoomResponse get(@PathVariable(name = "id") Long id) {
         return roomService.get(id);
     }
