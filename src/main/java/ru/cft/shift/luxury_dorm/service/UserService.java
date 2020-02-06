@@ -10,19 +10,15 @@ import ru.cft.shift.luxury_dorm.repository.IUserRepository;
 public class UserService implements IUserService {
     @Autowired
     private IUserRepository userRepository;
+
     @Override
     public UserResponse get (Long id) {
         UserResponse userResponse = new UserResponse();
         UserEntity userEntity = userRepository.findById(id).orElse(null);
         userResponse.setId(userEntity.getId());
+        userResponse.setName(userEntity.getName());
         userResponse.setBalance(userEntity.getBalance());
 
         return  userResponse;
     }
-
-    @Override
-    public UserEntity add(Long id, Float balance) {
-        return null;
-    }
-
 }
