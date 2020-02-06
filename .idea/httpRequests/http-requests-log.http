@@ -1,3 +1,151 @@
+GET http://localhost:5005/users/1
+
+<> 2020-02-06T030031.200.json
+
+###
+
+GET http://localhost:5005/users/1
+
+###
+
+GET http://localhost:5005/users/1
+
+<> 2020-02-06T015116.200.json
+
+###
+
+GET http://localhost:5005/users/1
+
+<> 2020-02-06T014959.500.json
+
+###
+
+GET http://localhost:5005/users/1
+
+###
+
+GET http://localhost:5005/users/1
+
+###
+
+GET http://localhost:5005/users/1
+
+###
+
+GET http://localhost:5005/users/1
+
+<> 2020-02-06T014820.500.json
+
+###
+
+GET http://localhost:5005/users/1
+
+<> 2020-02-06T014749.500.json
+
+###
+
+GET http://localhost:5005/users/1
+
+<> 2020-02-06T114904.500.json
+
+###
+
+GET http://localhost:5005/users/1
+
+<> 2020-02-06T114311.500.json
+
+###
+
+GET http://localhost:5005/users/1
+
+<> 2020-02-06T113812.500.json
+
+###
+
+GET http://localhost:5005/users/id=1
+
+<> 2020-02-06T113622.400.json
+
+###
+
+GET http://localhost:5005/users/stas
+
+<> 2020-02-06T113559.400.json
+
+###
+
+GET http://localhost:5005/users/stas
+
+<> 2020-02-06T113542.400.json
+
+###
+
+GET http://localhost:5005/users/add?String=stas
+
+<> 2020-02-06T113511.400.json
+
+###
+
+GET http://localhost:5005/users/add?nuber=1
+
+<> 2020-02-06T113402.400.json
+
+###
+
+GET http://localhost:5005/users/1
+
+<> 2020-02-06T113226.500.json
+
+###
+
+GET http://localhost:5005/users/1
+
+<> 2020-02-06T111932.500.json
+
+###
+
+GET http://localhost:5005/users/1
+
+<> 2020-02-05T102735.500.json
+
+###
+
+GET http://localhost:5005/users/id=1
+
+<> 2020-02-05T102446.400.json
+
+###
+
+GET http://localhost:5005/users/1
+
+<> 2020-02-05T102407.500.json
+
+###
+
+GET http://localhost:5005/users/id=1
+
+<> 2020-02-05T102356.400.json
+
+###
+
+GET http://localhost:5005/users/add?id=1
+
+<> 2020-02-05T102347.400.json
+
+###
+
+GET http://localhost:5005/users/1
+
+<> 2020-02-05T102319.500.json
+
+###
+
+GET http://localhost:5005/users/name
+
+<> 2020-02-05T102215.400.json
+
+###
+
 GET http://localhost:5005/room/1/
 
 <> 2020-02-05T042107.200.json
@@ -155,209 +303,6 @@ Content-Type: application/x-www-form-urlencoded
 name=123&type=lux
 
 <> 2020-02-04T110848.200.json
-
-###
-
-POST http://localhost:5005/room/add/
-Content-Type: application/x-www-form-urlencoded
-
-name=123&type=test
-
-<> 2020-02-04T110827.200.json
-
-###
-
-POST http://localhost:5005/room-type/add/
-Content-Type: application/x-www-form-urlencoded
-
-name=test&area=12&maxProductQuantity=5
-
-<> 2020-02-04T110623.200.json
-
-###
-
-POST http://localhost:5005/room-type/add
-Content-Type: application/x-www-form-urlencoded
-
-name=test&area=12&maxProductQuantity=5
-
-<> 2020-02-04T110605.200.json
-
-###
-
-POST http://localhost:5005/room-type/add/
-Content-Type: application/x-www-form-urlencoded
-
-name=test&area=12&maxProductQuantity=5
-
-<> 2020-02-04T110510.200.json
-
-###
-
-POST http://localhost:5005/room-type/add
-Content-Type: application/x-www-form-urlencoded
-
-name=test&area=12&maxProductQuantity=5
-
-<> 2020-02-04T110456.405.json
-
-###
-
-POST http://localhost:5005/room/add/room-type
-Content-Type: application/x-www-form-urlencoded
-
-name=test&area=12&maxProductQuantity=5
-
-<> 2020-02-04T110334.200.json
-
-###
-
-GET http://localhost:5005/room/1/
-
-<> 2020-02-04T085512.500.json
-
-###
-
-GET http://localhost:5005/room/1/
-
-<> 2020-02-04T084854.500.json
-
-###
-
-GET http://localhost:5005/room/1
-
-<> 2020-02-04T084849.500.json
-
-###
-
-GET http://localhost:5005/room/2
-
-<> 2020-02-04T084844.500.json
-
-###
-
-GET http://localhost:5005/room/
-
-<> 2020-02-04T084835.404.json
-
-###
-
-POST http://localhost:5005/bus/add/?modelName=pzr&number=10
-Content-Type: application/x-www-form-urlencoded
-
-<> 2020-02-04T034438.200.json
-
-###
-
-POST http://localhost:5005/bus/add/?modelName=pwzr&number=10
-Content-Type: application/x-www-form-urlencoded
-
-<> 2020-02-04T034340.200.json
-
-###
-
-POST http://localhost:5005/bus/add/?modelName=pzr&number=10
-Content-Type: application/x-www-form-urlencoded
-
-<> 2020-02-04T034143.200.json
-
-###
-
-POST http://localhost:5005/bus/add/?modelName=pzr&number=10
-Content-Type: application/x-www-form-urlencoded
-
-<> 2020-02-04T033739.200.json
-
-###
-
-POST http://localhost:5005/bus/add/
-Content-Type: application/x-www-form-urlencoded
-
-modelName=pzr&number=10
-
-<> 2020-02-04T033555.200.json
-
-###
-
-POST http://localhost:5005/bus/model/add
-Content-Type: application/x-www-form-urlencoded
-
-name=pzr&size=40&producer=russia
-
-<> 2020-02-04T033306.200.json
-
-###
-
-POST http://localhost:5005/bus/add/passenger/
-Content-Type: application/x-www-form-urlencoded
-
-number=12&passengerName=Vasya
-
-<> 2020-02-04T032603.500.json
-
-###
-
-POST http://localhost:5005/bus/add/passenger/
-Content-Type: application/x-www-form-urlencoded
-
-number=12&passengerName=Vasya
-
-###
-
-POST http://localhost:5005/bus/add/passenger/
-Content-Type: application/x-www-form-urlencoded
-
-id=1&number=12&passengerName=Vasya
-
-<> 2020-02-04T032351.500.json
-
-###
-
-POST http://localhost:5005/bus/add/passenger/
-Content-Type: application/x-www-form-urlencoded
-
-number=12&passengerName=Vasya
-
-<> 2020-02-04T032338.500.json
-
-###
-
-POST http://localhost:5005/bus/add/passenger/?number=12&passengerName=Vasya
-Content-Type: application/x-www-form-urlencoded
-
-<> 2020-02-04T032251.500.json
-
-###
-
-POST http://localhost:5005/bus/add/passenger/?number=12&passengerName=Vasya
-Content-Type: application/x-www-form-urlencoded
-
-<> 2020-02-04T032209.500.json
-
-###
-
-POST http://localhost:5005/bus/add/passenger?number=12&passengerName=Vasya
-Content-Type: application/x-www-form-urlencoded
-
-<> 2020-02-04T032109.500.json
-
-###
-
-POST http://localhost:5005/bus/add/
-Content-Type: application/x-www-form-urlencoded
-
-modelName=testModel&number=10
-
-<> 2020-02-04T031806.200.json
-
-###
-
-POST http://localhost:5005/bus/add/
-Content-Type: application/x-www-form-urlencoded
-
-number=10&modelName=testModel
-
-<> 2020-02-04T031613.200.json
 
 ###
 
