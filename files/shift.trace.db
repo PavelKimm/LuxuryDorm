@@ -61,3 +61,9 @@ insert into room_type values (1, 30, 25, "lux") [42122-200]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-02-06 14:52:05 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'jl' (USER: ""ROOM_ROOMID"" BIGINT)"; SQL statement:
+INSERT INTO "PUBLIC"."USER"("USERID","BALANCE","NAME","ROOM_ROOMID")VALUES(?,?,?,?) [22018-200]
+2020-02-06 14:52:05 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'jl' (USER: ""ROOM_ROOMID"" BIGINT)"; SQL statement:
+INSERT INTO "PUBLIC"."USER"("USERID","BALANCE","NAME","ROOM_ROOMID")VALUES(?,?,?,?) [22018-200]
