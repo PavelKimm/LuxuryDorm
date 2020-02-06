@@ -7,4 +7,5 @@ public interface IRoomService {
     RoomEntity add(RoomEntity room);
     RoomEntity add(String name, String type);
     RoomResponse get(Long id);
+//    Void delete(Long productId, Long roomId, Integer count);
 }
