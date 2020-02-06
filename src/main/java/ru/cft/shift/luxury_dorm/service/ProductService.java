@@ -34,10 +34,10 @@ public class ProductService implements IProductService {
     public CatalogResponse get() {
         CatalogResponse catalogResponse = new CatalogResponse();
         List<ProductResponse> productResponseList = new ArrayList<>();
-        List<ProductEntity> productEntityList = productRepository.getAllBy();
 
-        ProductResponse productResponse = new ProductResponse();
+        List<ProductEntity> productEntityList = productRepository.getAllBy();
         for (ProductEntity productEntity : productEntityList) {
+            ProductResponse productResponse = new ProductResponse();
             productResponse.setId(productEntity.getId());
             productResponse.setName(productEntity.getName());
             productResponse.setPrice(productEntity.getPrice());

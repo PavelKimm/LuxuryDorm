@@ -50,10 +50,8 @@ public class RoomService implements IRoomService {
         roomResponse.setRoom_type(roomEntity.getRoomType().getName());
 
         List<RoomProductEntity> roomProductEntityList = roomProductRepository.getAllByRoomId(id);
-        roomResponse.setProduct_count(roomProductEntityList.size());
-
-        ProductCountResponse productCountResponse = new ProductCountResponse();
         for (RoomProductEntity roomProductEntity : roomProductEntityList){
+            ProductCountResponse productCountResponse = new ProductCountResponse();
             productCountResponse.setId(roomProductEntity.getProduct().getId());
             productCountResponse.setCount(roomProductEntity.getQuantity());
             productCountResponse.setCategory(roomProductEntity.getProduct().getCategory().getName());
@@ -65,6 +63,7 @@ public class RoomService implements IRoomService {
             productCountResponseList.add(productCountResponse);
         }
         roomResponse.setProducts(productCountResponseList);
+        roomResponse.setProduct_count(roomProductEntityList.size());
 
         return roomResponse;
     }
