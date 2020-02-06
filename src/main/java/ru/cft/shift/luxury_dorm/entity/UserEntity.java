@@ -6,7 +6,7 @@ import static javax.persistence.GenerationType.IDENTITY;
 
 @Entity
 @Table(name = "User")
-public class User {
+public class UserEntity {
     @Id
     @Column(name = "UserID")
     @GeneratedValue(strategy = IDENTITY)
@@ -14,7 +14,7 @@ public class User {
     @Column(name = "Name")
     private String name;
     @Column(name = "Balance")
-    private Float balance;
+    private float balance;
     @OneToOne(cascade = CascadeType.ALL)
     private RoomEntity room;
 
@@ -34,11 +34,11 @@ public class User {
         this.name = name;
     }
 
-    public Float getBalance() {
+    public float getBalance() {
         return balance;
     }
 
-    public void setBalance(Float balance) {
+    public void setBalance(Integer balance) {
         this.balance = balance;
     }
 
