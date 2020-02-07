@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import ru.cft.shift.luxury_dorm.api.request.BuyProductRequest;
+import ru.cft.shift.luxury_dorm.api.request.DeleteProductRequest;
 import ru.cft.shift.luxury_dorm.api.request.RoomTypeRequest;
 import ru.cft.shift.luxury_dorm.api.response.RoomIdResponse;
 import ru.cft.shift.luxury_dorm.repository.IRoomProductRepository;
@@ -23,5 +24,14 @@ public class RoomProductController {
             produces = "application/json"
     ) public RoomIdResponse buy(@RequestBody BuyProductRequest buyProductRequest) {
         return roomProductService.buy(buyProductRequest);
+    }
+
+    @RequestMapping(
+            method = RequestMethod.POST,
+            path = "/products/delete",
+            consumes = "application/json",
+            produces = "application/json"
+    ) public RoomIdResponse delete(@RequestBody DeleteProductRequest deleteProductRequest) {
+        return roomProductService.delete(deleteProductRequest);
     }
 }

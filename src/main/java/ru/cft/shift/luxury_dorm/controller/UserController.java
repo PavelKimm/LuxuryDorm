@@ -22,7 +22,7 @@ public class UserController {
     }
 
     @RequestMapping(
-            method = RequestMethod.GET,
+            method = RequestMethod.POST,
             path = "/users/{user_id}/wallet/charge",
             consumes = "application/json",
             produces = "application/json"

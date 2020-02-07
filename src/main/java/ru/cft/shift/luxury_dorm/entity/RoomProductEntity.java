@@ -4,22 +4,6 @@ import javax.persistence.*;
 
 import java.io.Serializable;
 
-//@Embeddable
-//class RoomProductKey implements Serializable {
-//    @Column(name = "ProductID")
-//    private Long productId;
-//    @Column(name = "RoomID")
-//    private Long roomId;
-//
-//    public RoomProductKey() {
-//    }
-//
-//    public RoomProductKey(Long productId, Long roomId) {
-//        this.productId = productId;
-//        this.roomId = roomId;
-//    }
-//}
-
 @Entity
 @Table(name = "RoomProduct")
 public class RoomProductEntity {
@@ -29,12 +13,12 @@ public class RoomProductEntity {
     @Column(name = "Quantity")
     private Integer quantity;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne()
     @MapsId("ProductID")
     @JoinColumn(name = "ProductID")
     private ProductEntity product;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne()
     @MapsId("RoomID")
     @JoinColumn(name = "RoomID")
     private RoomEntity room;

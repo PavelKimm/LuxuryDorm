@@ -3,6 +3,7 @@ package ru.cft.shift.luxury_dorm.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.cft.shift.luxury_dorm.api.request.BuyProductRequest;
+import ru.cft.shift.luxury_dorm.api.request.DeleteProductRequest;
 import ru.cft.shift.luxury_dorm.api.response.RoomIdResponse;
 import ru.cft.shift.luxury_dorm.entity.*;
 import ru.cft.shift.luxury_dorm.repository.IProductRepository;
@@ -47,6 +48,38 @@ public class RoomProductService implements IRoomProductService {
 
         roomProductRepository.save(roomProductEntity);
         userRepository.save(userEntity);
+        roomIdResponse.setRoom_id(roomId);
+        return roomIdResponse;
+    }
+
+    @Override
+    public RoomIdResponse delete(DeleteProductRequest deleteProductRequest) {
+        RoomIdResponse roomIdResponse = new RoomIdResponse();
+
+        Long roomId = deleteProductRequest.getRoom_id();
+        Long productId = deleteProductRequest.getProduct_id();
+        Long userId = deleteProductRequest.getUser_id();
+
+        RoomProductKey roomProductKey = new RoomProductKey(productId, roomId);
+
+        RoomProductEntity roomProductEntity = roomProductRepository.getById(roomProductKey);
+
+        ProductEntity productEntity = productRepository.findById(productId).orElse(null);
+        UserEntity userEntity = userRepository.findById(userId).orElse(null);
+
+        Float userBalance = userEntity.getBalance();
+        Float productPrice = productEntity.getPrice();
+        userEntity.setBalance(userBalance + productPrice * 0.5F);
+        userRepository.save(userEntity);
+
+
+        if (roomProductEntity.getQuantity()==1){
+            roomProductRepository.delete(roomProductEntity);
+        }
+        else{
+            roomProductEntity.setQuantity(roomProductEntity.getQuantity()-1);
+            roomProductRepository.save(roomProductEntity);
+        }
         roomIdResponse.setRoom_id(roomId);
         return roomIdResponse;
     }
