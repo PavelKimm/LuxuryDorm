@@ -68,9 +68,4 @@ public class RoomService implements IRoomService {
         return roomResponse;
     }
 
-//    @Override
-//    public Void delete(Long productId, Long roomId, Integer count) {
-//        roomProductRepository.deleteById(productId);
-//    }
-
 }

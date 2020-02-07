@@ -1,3 +1,55 @@
+POST http://localhost:5006/products/buy
+Content-Type: application/json
+
+{
+  "product_id": "1",
+  "room_id": "1",
+  "user_id": "1"
+}
+
+<> 2020-02-07T032514.200.json
+
+###
+
+POST http://localhost:5006/products/buy
+Content-Type: application/json
+
+{
+  "product_id": "1",
+  "room_id": "1",
+  "user_id": "1"
+}
+
+<> 2020-02-07T032446.200.json
+
+###
+
+POST http://localhost:5006/products/buy
+Content-Type: application/json
+
+{
+  "product_id": "1",
+  "room_id": "1",
+  "user_id": "1"
+}
+
+<> 2020-02-07T032359.200.json
+
+###
+
+POST http://localhost:5005/products/buy
+Content-Type: application/json
+
+{
+  "product_id": "1",
+  "room_id": "1",
+  "user_id": "1"
+}
+
+<> 2020-02-07T032320.405.json
+
+###
+
 GET http://localhost:5005/catalog/л
 
 <> 2020-02-06T060216.200.json
@@ -263,30 +315,6 @@ GET http://localhost:5005/users/1
 GET http://localhost:5005/users/id=1
 
 <> 2020-02-05T102446.400.json
-
-###
-
-GET http://localhost:5005/users/1
-
-<> 2020-02-05T102407.500.json
-
-###
-
-GET http://localhost:5005/users/id=1
-
-<> 2020-02-05T102356.400.json
-
-###
-
-GET http://localhost:5005/users/add?id=1
-
-<> 2020-02-05T102347.400.json
-
-###
-
-GET http://localhost:5005/users/1
-
-<> 2020-02-05T102319.500.json
 
 ###
 
