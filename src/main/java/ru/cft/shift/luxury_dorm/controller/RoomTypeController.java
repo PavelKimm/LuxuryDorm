@@ -6,9 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import ru.cft.shift.luxury_dorm.api.request.RoomTypeRequest;
 import ru.cft.shift.luxury_dorm.api.response.RoomIdResponse;
 import ru.cft.shift.luxury_dorm.api.response.RoomTypeResponse;
-import ru.cft.shift.luxury_dorm.entity.RoomTypeEntity;
 import ru.cft.shift.luxury_dorm.service.IRoomTypeService;
-import ru.cft.shift.luxury_dorm.service.RoomTypeService;
 
 @RestController
 public class RoomTypeController {

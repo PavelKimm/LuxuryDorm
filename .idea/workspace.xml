@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b427d504-9e7b-4b3b-8c23-3d49ce2d08a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/api/request/BuyProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/controller/RoomProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/entity/RoomProductKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/service/IRoomProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/service/RoomProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/shift.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/files/shift.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/shift.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/files/shift.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/entity/RoomProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/entity/RoomProductEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/repository/IRoomProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/repository/IRoomProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/service/IRoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/service/IRoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/service/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/service/RoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/controller/RoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/controller/RoomProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/controller/RoomProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/controller/RoomTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/controller/RoomTypeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -830,12 +813,12 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.LuxuryDorm [build]" />
+      <item itemvalue="Gradle.LuxuryDorm [bootJar]" />
       <item itemvalue="HTTP Request.scratch#2" />
       <item itemvalue="HTTP Request.scratch_1#1" />
       <item itemvalue="HTTP Request.scratch_1#3" />
       <item itemvalue="Spring Boot.QuickstartBusTrafficApplication" />
-      <item itemvalue="Gradle.LuxuryDorm [build]" />
-      <item itemvalue="Gradle.LuxuryDorm [bootJar]" />
     </list>
     <recent_temporary>
       <list>

@@ -7,9 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import ru.cft.shift.luxury_dorm.api.request.BuyProductRequest;
 import ru.cft.shift.luxury_dorm.api.request.DeleteProductRequest;
-import ru.cft.shift.luxury_dorm.api.request.RoomTypeRequest;
 import ru.cft.shift.luxury_dorm.api.response.RoomIdResponse;
-import ru.cft.shift.luxury_dorm.repository.IRoomProductRepository;
 import ru.cft.shift.luxury_dorm.service.IRoomProductService;
 
 @RestController
