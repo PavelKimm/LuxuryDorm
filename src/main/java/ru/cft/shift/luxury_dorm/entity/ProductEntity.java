@@ -13,9 +13,9 @@ public class ProductEntity {
     private Long id;
     @Column(name = "Name")
     private String name;
-    @Column(name = "Description")
+    @Column(name = "Description", length = 1000)
     private String description;
-    @Column(name = "PhotoURL")
+    @Column(name = "PhotoURL", length = 1000)
     private String photo_url;
     @Column(name = "Price")
     private Float price;

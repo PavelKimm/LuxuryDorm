@@ -13,10 +13,6 @@ public class RoomEntity {
     private Long id;
     @Column(name = "Name")
     private String name;
-    @Column(name = "Price")
-    private Float price;
-    @Column(name = "Bonus")
-    private Float bonus;
     @ManyToOne(cascade = CascadeType.ALL)
     private RoomTypeEntity roomType;
 
@@ -42,21 +38,5 @@ public class RoomEntity {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Float getPrice() {
-        return price;
-    }
-
-    public void setPrice(Float price) {
-        this.price = price;
-    }
-
-    public Float getBonus() {
-        return bonus;
-    }
-
-    public void setBonus(Float bonus) {
-        this.bonus = bonus;
     }
 }
