@@ -27,6 +27,7 @@ public class ProductService implements IProductService {
         productResponse.setName(productEntity.getName());
         productResponse.setPrice(productEntity.getPrice());
         productResponse.setDescription(productEntity.getDescription());
+        productResponse.setPhoto_url(productEntity.getPhoto_url());
 
         return productResponse;
     }

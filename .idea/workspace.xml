@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b427d504-9e7b-4b3b-8c23-3d49ce2d08a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/shift.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/files/shift.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/cft/shift/luxury_dorm/service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +111,44 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5005/products/1/" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5005/users/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/x-www-form-urlencoded" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5005/room_types/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;room_type_id&quot;: &quot;3&quot;,&#10;  &quot;user_id&quot;: &quot;1&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:5005/catalog/с" />
@@ -669,58 +708,32 @@
           <option name="textToSend" value="modelName=pzr&amp;number=10" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:5005/bus/model/add" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/x-www-form-urlencoded" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="name=pzr&amp;size=40&amp;producer=russia" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:5005/bus/add/passenger/" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/x-www-form-urlencoded" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="number=12&amp;passengerName=Vasya" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:5005/bus/add/passenger/" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/x-www-form-urlencoded" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="id=1&amp;number=12&amp;passengerName=Vasya" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.LuxuryDorm [bootJar]">
+    <configuration name="LuxuryDorm [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_1#9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.http" index="9" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="QuickstartBusTrafficApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="luxuryDorm.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.cft.shift.luxury_dorm.QuickstartLuxuryDormApplication" />
@@ -729,6 +742,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.LuxuryDorm [bootJar]" />
+        <item itemvalue="HTTP Request.scratch_1#9" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -748,6 +767,7 @@
       <workItem from="1580888351373" duration="756000" />
       <workItem from="1581072448233" duration="324000" />
       <workItem from="1581078433068" duration="724000" />
+      <workItem from="1581100213460" duration="183000" />
     </task>
     <servers />
   </component>
@@ -806,54 +826,54 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="290" y="59" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1580975588788" />
-    <state width="1398" height="160" key="GridCell.Tab.0.bottom" timestamp="1581099383807">
+    <state width="1398" height="304" key="GridCell.Tab.0.bottom" timestamp="1581100533023">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1238" height="307" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580986936697" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580889118942" />
-    <state width="1398" height="160" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1581099383807" />
-    <state width="1398" height="160" key="GridCell.Tab.0.center" timestamp="1581099383807">
+    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1581100533023" />
+    <state width="1398" height="304" key="GridCell.Tab.0.center" timestamp="1581100533022">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1238" height="307" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1580986936696" />
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580889118942" />
-    <state width="1398" height="160" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1581099383807" />
-    <state width="1398" height="160" key="GridCell.Tab.0.left" timestamp="1581099383806">
+    <state width="1398" height="304" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1581100533022" />
+    <state width="1398" height="304" key="GridCell.Tab.0.left" timestamp="1581100533021">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1238" height="307" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1580986936695" />
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580889118942" />
-    <state width="1398" height="160" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1581099383806" />
-    <state width="1398" height="160" key="GridCell.Tab.0.right" timestamp="1581099383807">
+    <state width="1398" height="304" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1581100533021" />
+    <state width="1398" height="304" key="GridCell.Tab.0.right" timestamp="1581100533023">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1238" height="307" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1580986936696" />
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580889118942" />
-    <state width="1398" height="160" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1581099383807" />
-    <state width="1398" height="160" key="GridCell.Tab.1.bottom" timestamp="1581099383809">
+    <state width="1398" height="304" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1581100533023" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1581100478780">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1238" height="307" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580986902631" />
     <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580889118911" />
-    <state width="1398" height="160" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1581099383809" />
-    <state width="1398" height="160" key="GridCell.Tab.1.center" timestamp="1581099383808">
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1581100478780" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1581100478778">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1238" height="307" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1580986902629" />
     <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1580889118911" />
-    <state width="1398" height="160" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1581099383808" />
-    <state width="1398" height="160" key="GridCell.Tab.1.left" timestamp="1581099383808">
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1581100478778" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1581100478778">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1238" height="307" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1580986902628" />
     <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1580889118911" />
-    <state width="1398" height="160" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1581099383808" />
-    <state width="1398" height="160" key="GridCell.Tab.1.right" timestamp="1581099383809">
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1581100478778" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1581100478779">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1238" height="307" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1580986902630" />
     <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1580889118911" />
-    <state width="1398" height="160" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1581099383809" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1581100478779" />
     <state width="1238" height="263" key="GridCell.Tab.2.bottom" timestamp="1580986180035">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
