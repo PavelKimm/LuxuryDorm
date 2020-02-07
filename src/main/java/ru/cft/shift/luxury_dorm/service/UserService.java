@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.cft.shift.luxury_dorm.api.request.ChargeWalletRequest;
 import ru.cft.shift.luxury_dorm.api.response.ChargeWalletResponse;
+import ru.cft.shift.luxury_dorm.api.response.UserFirstEnterResponse;
 import ru.cft.shift.luxury_dorm.api.response.UserResponse;
 import ru.cft.shift.luxury_dorm.entity.UserEntity;
 import ru.cft.shift.luxury_dorm.repository.IUserRepository;
@@ -43,5 +44,20 @@ public class UserService implements IUserService {
         chargeWalletResponse.setBalance(newBalance);
 
         return chargeWalletResponse;
+    }
+
+    @Override
+    public UserFirstEnterResponse getFirstEnter(Long id)
+    {
+        UserFirstEnterResponse userFirstEnterResponse = new UserFirstEnterResponse();
+        UserEntity userEntity = userRepository.findById(id).orElse(null);
+
+        userFirstEnterResponse.setStatus("NO");
+        if (userEntity.getRoom()==null)
+        {
+            userFirstEnterResponse.setStatus("YES");
+        }
+
+        return userFirstEnterResponse;
     }
 }

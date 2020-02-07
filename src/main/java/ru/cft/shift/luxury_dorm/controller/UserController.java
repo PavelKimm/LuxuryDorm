@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import ru.cft.shift.luxury_dorm.api.request.ChargeWalletRequest;
 import ru.cft.shift.luxury_dorm.api.response.ChargeWalletResponse;
+import ru.cft.shift.luxury_dorm.api.response.UserFirstEnterResponse;
 import ru.cft.shift.luxury_dorm.api.response.UserResponse;
 import ru.cft.shift.luxury_dorm.service.IUserService;
 
@@ -28,5 +29,10 @@ public class UserController {
             produces = "application/json"
     ) public ChargeWalletResponse add(@RequestBody ChargeWalletRequest chargeWalletRequest) {
         return userService.charge(chargeWalletRequest);
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = "/users/{id}/first_enter", produces = "application/json")
+    public UserFirstEnterResponse getFirstEnter(@PathVariable(name = "id") Long id) {
+        return userService.getFirstEnter(id);
     }
 }

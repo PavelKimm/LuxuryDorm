@@ -61,6 +61,8 @@ public class RoomTypeService implements IRoomTypeService {
 
         RoomIdResponse roomIdResponse = new RoomIdResponse();
         roomIdResponse.setRoom_id(roomEntity.getId());
+
+        userRepository.save(user);
         return roomIdResponse;
     }
 
