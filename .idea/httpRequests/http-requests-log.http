@@ -1,3 +1,9 @@
+GET http://localhost:5005/catalog/с
+
+<> 2020-02-07T054212.200.json
+
+###
+
 GET http://localhost:7777/users/1
 Content-Type: application/x-www-form-urlencoded
 
@@ -310,12 +316,6 @@ GET http://localhost:5005/users/add?nuber=1
 GET http://localhost:5005/users/1
 
 <> 2020-02-06T113226.500.json
-
-###
-
-GET http://localhost:5005/users/1
-
-<> 2020-02-06T111932.500.json
 
 ###
 
