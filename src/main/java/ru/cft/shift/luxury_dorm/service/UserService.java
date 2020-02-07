@@ -18,7 +18,7 @@ public class UserService implements IUserService {
     public UserResponse get (Long id) {
         UserResponse userResponse = new UserResponse();
         UserEntity userEntity = userRepository.findById(id).orElse(null);
-        userResponse.setId(userEntity.getId());
+        userResponse.setId(userEntity.getRoom().getId());
         userResponse.setName(userEntity.getName());
         userResponse.setBalance(userEntity.getBalance());
 
