@@ -48,6 +48,7 @@ public class RoomService implements IRoomService {
         roomResponse.setName(roomEntity.getName());
         roomResponse.setMax_product(roomEntity.getRoomType().getMaxProductQuantity());
         roomResponse.setRoom_type(roomEntity.getRoomType().getName());
+        roomResponse.setPhoto_url(roomEntity.getPhoto_url());
 
         List<RoomProductEntity> roomProductEntityList = roomProductRepository.getAllByRoomId(id);
         for (RoomProductEntity roomProductEntity : roomProductEntityList){

@@ -6,6 +6,7 @@ public class RoomResponse {
     private Long id;
     private String name;
     private String room_type;
+    private String photo_url;
     private Integer area;
     private Integer max_product;
     private Integer product_count;
@@ -33,6 +34,14 @@ public class RoomResponse {
 
     public void setRoom_type(String room_type) {
         this.room_type = room_type;
+    }
+
+    public String getPhoto_url() {
+        return photo_url;
+    }
+
+    public void setPhoto_url(String photo_url) {
+        this.photo_url = photo_url;
     }
 
     public Integer getArea() {
@@ -73,6 +82,7 @@ public class RoomResponse {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", room_type='" + room_type + '\'' +
+                ", photo_url='" + photo_url + '\'' +
                 ", area=" + area +
                 ", max_product=" + max_product +
                 ", product_count=" + product_count +

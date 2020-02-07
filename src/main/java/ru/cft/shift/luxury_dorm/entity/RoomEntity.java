@@ -13,6 +13,8 @@ public class RoomEntity {
     private Long id;
     @Column(name = "Name")
     private String name;
+    @Column(name = "PhotoUrl")
+    private String photo_url;
     @ManyToOne(cascade = CascadeType.ALL)
     private RoomTypeEntity roomType;
 
@@ -38,5 +40,13 @@ public class RoomEntity {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPhoto_url() {
+        return photo_url;
+    }
+
+    public void setPhoto_url(String photo_url) {
+        this.photo_url = photo_url;
     }
 }
