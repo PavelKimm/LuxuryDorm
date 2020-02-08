@@ -1,3 +1,13 @@
+GET http://localhost:7777/rooms/1/
+
+<> 2020-02-08T084022.200.json
+
+###
+
+GET http://localhost:5005/rooms/1/
+
+###
+
 GET http://localhost:5005/products/1/
 
 <> 2020-02-08T013352.200.json
@@ -304,18 +314,6 @@ GET http://localhost:5005/users/id=1
 GET http://localhost:5005/users/stas
 
 <> 2020-02-06T113559.400.json
-
-###
-
-GET http://localhost:5005/users/stas
-
-<> 2020-02-06T113542.400.json
-
-###
-
-GET http://localhost:5005/users/add?String=stas
-
-<> 2020-02-06T113511.400.json
 
 ###
 

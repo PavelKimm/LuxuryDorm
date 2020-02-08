@@ -51,10 +51,15 @@ public class RoomService implements IRoomService {
         roomResponse.setPhoto_url(roomEntity.getPhoto_url());
 
         List<RoomProductEntity> roomProductEntityList = roomProductRepository.getAllByRoomId(id);
+        Integer totalProductCount = 0;
         for (RoomProductEntity roomProductEntity : roomProductEntityList){
             ProductCountResponse productCountResponse = new ProductCountResponse();
             productCountResponse.setId(roomProductEntity.getProduct().getId());
-            productCountResponse.setCount(roomProductEntity.getQuantity());
+
+            Integer productCount = roomProductEntity.getQuantity();
+            productCountResponse.setCount(productCount);
+            totalProductCount += productCount;
+
             productCountResponse.setCategory(roomProductEntity.getProduct().getCategory().getName());
             productCountResponse.setCategory_id(roomProductEntity.getProduct().getCategory().getId());
             productCountResponse.setName(roomProductEntity.getProduct().getName());
@@ -64,7 +69,7 @@ public class RoomService implements IRoomService {
             productCountResponseList.add(productCountResponse);
         }
         roomResponse.setProducts(productCountResponseList);
-        roomResponse.setProduct_count(roomProductEntityList.size());
+        roomResponse.setProduct_count(totalProductCount);
 
         return roomResponse;
     }
